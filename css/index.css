@@ -1,0 +1,190 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+/*背景动画部分*/
+@-webkit-keyframes sky-background {
+    0% {
+        background: #007fd5;
+        color: #007fd5;
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff;
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5;
+    }
+}
+@-moz-keyframes sky-background {
+    0% {
+        background: #007fd5;
+        color: #007fd5;
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff;
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5;
+    }
+}
+@keyframes sky-background {
+    0% {
+        background: #007fd5;
+        color: #007fd5;
+    }
+    50% {
+        background: #000;
+        color: #a3d9ff;
+    }
+    100% {
+        background: #007fd5;
+        color: #007fd5;
+    }
+}
+/*第一个云彩动画部分*/
+@-webkit-keyframes cloud-one {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@-moz-keyframes cloud-one {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@keyframes cloud-one {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+/*第二个云彩动画部分*/
+@-webkit-keyframes cloud-two {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@-moz-keyframes cloud-two {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@keyframes cloud-two {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+/*第三块云彩动画部分*/
+@-webkit-keyframes cloud-three {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@-moz-keyframes cloud-three {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+@keyframes cloud-three {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -200%;
+    }
+}
+/*天空背景部分*/
+.sky {
+    position: relative;
+    height: 550px;
+    background: #007fd5;
+    overflow: hidden;
+    -webkit-transform: translate3d( 0, 0, 0);
+    -ms-transform: translate3d( 0, 0, 0);
+    -o-transform: translate3d( 0, 0, 0);
+    transform: translate3d( 0, 0, 0);
+    -webkit-animation: sky-background 50s ease-out infinite;
+    -moz-animation: sky-background 50s ease-out infinite;
+    -o-animation: sky-background 50s ease-out infinite;
+    animation: sky-background 50s ease-out infinite;
+}
+/*云彩样式*/
+/*第一块云彩*/
+.sky .cloud-one {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    background: url("../image/cloud_one.png");
+    -webkit-transform: translate3d( 0, 0, 0);
+    -ms-transform: translate3d( 0, 0, 0);
+    -o-transform: translate3d( 0, 0, 0);
+    transform: translate3d( 0, 0, 0);
+    -webkit-animation: cloud-one 50s linear infinite;
+    -moz-animation: cloud-one 50s linear infinite;
+    -o-animation: cloud-one 50s linear infinite;
+    animation: cloud-one 50s linear infinite;
+}
+/*第二块云彩*/
+.sky .cloud-two {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    background: url("../image/cloud_two.png");
+    -webkit-transform: translate3d( 0, 0, 0);
+    -ms-transform: translate3d( 0, 0, 0);
+    -o-transform: translate3d( 0, 0, 0);
+    transform: translate3d( 0, 0, 0);
+    -webkit-animation: cloud-two 75s linear infinite;
+    -moz-animation: cloud-two 75s linear infinite;
+    -o-animation: cloud-two 75s linear infinite;
+    animation: cloud-two 75s linear infinite;
+}
+/*第三块云彩*/
+.sky .cloud-three {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    background: url("../image/cloud_three.png");
+    -webkit-transform: translate3d( 0, 0, 0);
+    -ms-transform: translate3d( 0, 0, 0);
+    -o-transform: translate3d( 0, 0, 0);
+    transform: translate3d( 0, 0, 0);
+    -webkit-animation: cloud-three 100s linear infinite;
+    -moz-animation: cloud-three 100s linear infinite;
+    -o-animation: cloud-three 100s linear infinite;
+    animation: cloud-three 100s linear infinite;
+}
